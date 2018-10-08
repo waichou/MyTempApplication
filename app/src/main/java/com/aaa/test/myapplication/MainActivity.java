@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.aaa.test.myapplication.recyclerview.RecyclerViewActivity;
+import com.aaa.test.myapplication.recyclerview.base.normal.RecyclerViewNormalActivity;
 import com.aaa.test.myapplication.utils.LoadingDialogUtils;
 import com.xiasuhuei321.loadingdialog.view.LoadingDialog;
 
@@ -144,5 +145,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void databindingRecyclerViewClick(View view) {
         startActivity(new Intent(this, RecyclerViewActivity.class));
+    }
+
+    public void databindNormalRecyclerViewClick(View view) {
+        startActivity(new Intent(this, RecyclerViewNormalActivity.class));
     }
 }
