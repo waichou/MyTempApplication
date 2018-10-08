@@ -1,6 +1,7 @@
 package com.aaa.test.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.aaa.test.myapplication.recyclerview.RecyclerViewActivity;
 import com.aaa.test.myapplication.utils.LoadingDialogUtils;
 import com.xiasuhuei321.loadingdialog.view.LoadingDialog;
 
@@ -138,5 +140,9 @@ public class MainActivity extends AppCompatActivity {
         int pingDuoDuoVaild = AppInfoUtils.isInstallClientApp(this,PING_DUODUO) ?1 : 0;
         int weChatVaild = AppInfoUtils.isInstallClientApp(this,WECHAT)? 1 : 0;
         
+    }
+
+    public void databindingRecyclerViewClick(View view) {
+        startActivity(new Intent(this, RecyclerViewActivity.class));
     }
 }
